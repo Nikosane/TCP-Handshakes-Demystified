@@ -44,16 +44,16 @@ The TCP 3-way handshake is a sequence of packets exchanged between a client and 
    cd Exploring-TCP-3-Way-Handshake
 
 2. Open the .pcap file in Wireshark:
-```
+```shell
 wireshark captures/tcp_handshake.pcap
 ```
 Run the Python scripts:
   -  Simulate the handshake:
-     ```
+     ```bash
      python scripts/simulate_handshake.py
      ```
   -  Analyze a .pcap file:
-     ```
+     ```shell
      python scripts/analyze_handshake.py
      ```
 
@@ -62,7 +62,7 @@ Run the Python scripts:
 ## Example Outputs
 
 Packet breakdown of a handshake:
-```
+```bash
 Packet 1: SYN (Seq: 0)
 Packet 2: SYN+ACK (Seq: 0, Ack: 1)
 Packet 3: ACK (Seq: 1, Ack: 1)
