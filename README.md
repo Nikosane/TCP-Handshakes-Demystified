@@ -83,3 +83,7 @@ In the `captures/` folder, include:
 2. A text file (`handshake_analysis.txt`) explaining the analysis of the capture.
 
 ---
+
+# Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request.
