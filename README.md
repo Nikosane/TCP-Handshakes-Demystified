@@ -1,5 +1,3 @@
-# TCP-Handshakes-Demystified
-
 # Exploring the TCP 3-Way Handshake
 
 This repository provides a detailed exploration of the **TCP 3-way handshake**, a critical process in establishing reliable communication over the Internet. The project includes real-world packet captures, detailed protocol analysis, and Python scripts for simulation and analysis.
@@ -42,7 +40,7 @@ The TCP 3-way handshake is a sequence of packets exchanged between a client and 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/Exploring-TCP-3-Way-Handshake.git
+   git clone https://github.com/Nikosane/TCP-Handshakes-Demystified.git
    cd Exploring-TCP-3-Way-Handshake
 
 2. Open the .pcap file in Wireshark:
