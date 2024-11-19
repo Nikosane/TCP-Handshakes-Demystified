@@ -83,7 +83,3 @@ In the `captures/` folder, include:
 2. A text file (`handshake_analysis.txt`) explaining the analysis of the capture.
 
 ---
-
-2. analyze_handshake.py
-
-This script analyzes a .pcap file to extract handshake details:
