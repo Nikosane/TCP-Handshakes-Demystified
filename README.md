@@ -69,7 +69,45 @@ Packet 1: SYN (Seq: 0)
 Packet 2: SYN+ACK (Seq: 0, Ack: 1)
 Packet 3: ACK (Seq: 1, Ack: 1)
 ```
+
+
 Round-trip time (RTT) calculation from a capture:
 ```
 RTT: 0.124 ms
 ```
+
+
+---
+
+### **Packet Capture**
+In the `captures/` folder, include:
+1. A `.pcap` file demonstrating the handshake (`tcp_handshake.pcap`).
+2. A text file (`handshake_analysis.txt`) explaining the analysis of the capture.
+
+---
+
+### **Python Scripts**
+#### **1. `simulate_handshake.py`**
+This script uses Scapy to simulate the handshake:
+```python
+from scapy.all import *
+
+# Define source and destination
+src_ip = "192.168.1.100"
+dst_ip = "192.168.1.1"
+dst_port = 80
+
+# SYN
+syn = IP(src=src_ip, dst=dst_ip) / TCP(sport=RandShort(), dport=dst_port, flags="S")
+syn_ack = sr1(syn)
+
+# SYN+ACK
+ack = IP(src=src_ip, dst=dst_ip) / TCP(sport=syn_ack[TCP].sport, dport=dst_port, flags="A", seq=syn_ack.ack, ack=syn_ack.seq + 1)
+send(ack)
+
+print("TCP 3-Way Handshake simulated successfully!")
+```
+
+2. analyze_handshake.py
+
+This script analyzes a .pcap file to extract handshake details:
