@@ -23,4 +23,8 @@ The handshake ensures that both the client and server are ready for communicatio
 
 The following diagram illustrates the sequence of events during a TCP 3-Way Handshake:
 
+Client Server |--- SYN --------------------->| |<--- SYN-ACK ----------------| |--- ACK --------------------->|
+
+
+For further details on packet analysis, refer to the capture files.
 
