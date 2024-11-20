@@ -2,7 +2,7 @@ from scapy.all import *
 
 # Define source and destination
 src_ip = "192.168.1.100"
-dst_ip = "192.168.1.1"
+dst_ip = "192.168.0.109"
 dst_port = 80
 
 # SYN
