@@ -1,0 +1,11 @@
+
+TCP 3-Way Handshake Analysis
+============================
+
+This file contains a detailed explanation of the TCP 3-way handshake captured in the tcp_handshake.pcap file.
+
+1. SYN (synchronize): The initiating client sends a SYN packet to start the connection.
+2. SYN+ACK (synchronize-acknowledge): The server responds with a SYN+ACK packet to acknowledge the request.
+3. ACK (acknowledge): The client sends an ACK packet to confirm the connection.
+
+The handshake establishes a reliable connection between the client and the server, allowing them to exchange data.
